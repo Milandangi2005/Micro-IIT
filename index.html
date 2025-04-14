@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💱 Currency Converter</h1>
+    <p>Convert currencies in real-time using live exchange rates.</p>
+  </header>
+
+  <div class="container">
+    <div class="side-box">
+      <h3>💡 Quick Tip</h3>
+      <p>Exchange rates fluctuate constantly. Always check rates before big conversions.</p>
+    </div>
+
+    <div class="converter-card">
+      <h2>🌍 Currency Converter</h2>
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <!-- <select id="fromCurrency"></select>
+      <select id="toCurrency"></select> -->
+      <div class="currency-wrapper">
+        <select id="fromCurrency"></select>
+      
+        <button id="swapBtn" class="swap-icon" title="Swap Currencies">
+          <span>⇅</span>
+        </button>
+      
+        <select id="toCurrency"></select>
+      </div>
+      
+      
+      <button onclick="convertCurrency()">Convert</button>
+      <div id="result"></div>
+    </div>
+
+    <div class="side-box">
+      <h3>🌐 Info</h3>
+      <p>Supports 150+ currencies. Powered by real-time API data.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Built for Micro IT Internship | 2025</p>
+    <p>Designed by Milan Dangi</p>
+    <p>Contact: milandangi2005@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
